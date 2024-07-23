@@ -13,4 +13,4 @@ function grade(homework: number, midterm: number, final: number) {
     }
 }
 
-console.log(grade(10, 40, 50))
+console.log(grade(20, 20, 55))
