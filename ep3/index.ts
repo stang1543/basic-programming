@@ -50,3 +50,19 @@ function couture(sex: string , height: number, weight: number){
     }
 }
 couture ('ชาย',180,70)
+function calculateBMI(weight: number, height: number): number {
+  return weight / (height * height);
+}
+
+// Function to determine BMI category
+function getBMICategory(bmi: number): string {
+  if (bmi < 18.5) {
+    return "น้ำหนักน้อย";
+  } else if (bmi >= 18.5 && bmi < 24.9) {
+    return "น้ำหนักปกติ";
+  } else if (bmi >= 25 && bmi < 29.9) {
+    return "น้ำหนักเกิน";
+  } else {
+    return "อ้วน";
+  }
+}
